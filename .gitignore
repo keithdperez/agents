@@ -1,0 +1,20 @@
+# Ignore all project directories (they have their own git repos)
+projects/*/
+
+# Ignore sandbox experiments
+sandbox/
+
+# Ignore platform-specific configs that might have API keys
+.claude/settings.local.json
+.cursor/
+.windsurf/
+
+# Keep the core prompts tracked
+!core/
+
+# Obsidian integration
+obsidian-integration/
+
+# System files
+.DS_Store
+*.log
