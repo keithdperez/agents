@@ -4,16 +4,15 @@ projects/*/
 # Ignore sandbox experiments
 sandbox/
 
-# Ignore platform-specific configs that might have API keys
-.claude/settings.local.json
+# Ignore platform-specific configs (we track .claude/settings.local.json with the configured permissions)
 .cursor/
 .windsurf/
 
 # Keep the core prompts tracked
 !core/
 
-# Obsidian integration
-obsidian-integration/
+# Obsidian integration - ignore config with personal vault path
+obsidian-integration/config.sh
 
 # System files
 .DS_Store
